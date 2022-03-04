@@ -760,6 +760,7 @@ n是个整数，代表在history历史纪录中前进或后退了多少步
 
 #### 嵌套路由和单组件多视图
 **一个**`<router-view>`**对应展示的就是一个组件**，因此实现嵌套路由有两个要点：
+
 1. 路由对象中定义子路由
 2. 组件内`<router-view>`的使用
 
@@ -795,7 +796,9 @@ const router = new VueRouter({
   ]
 })
 ```
-##### 组件内<router-view>的使用
+
+##### 组件内router-view的使用
+
 ```html
 <div id="app">
   <div>
@@ -1087,7 +1090,7 @@ const Yamato = {
 }
 ```
 ##### 导航解析流程
-![导航解析流程](/router-process.jpg)
+![导航解析流程](./router-process.jpg)
 
 #### 路由元信息
 
