@@ -87,6 +87,6 @@ module.exports = {
     // 是否启用最近更新时间戳
     lastUpdated: true,
     // 最近更新时间戳标签的文字
-    lastUpdatedText: '上次更新：'
+    lastUpdatedText: '上次更新'
   }
 }
