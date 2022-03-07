@@ -78,8 +78,12 @@ module.exports = {
             link: '/other/babel.md'
           },
           {
-            text: '面试题',
+            text: 'questions',
             link: '/other/questions.md'
+          },
+          {
+            text: '面试题',
+            link: '/other/面试题.md'
           }
         ]
       }
