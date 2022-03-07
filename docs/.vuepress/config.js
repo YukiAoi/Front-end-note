@@ -88,5 +88,43 @@ module.exports = {
     lastUpdated: true,
     // 最近更新时间戳标签的文字
     lastUpdatedText: '上次更新'
-  }
+  },
+  // 插件
+  plugins:[
+    // 搜索框
+    [
+      '@vuepress/plugin-search',
+      {
+        locales:{
+          '/':{
+            placeholder:'搜索'
+          }
+        }
+      }
+    ],
+    // 看板娘
+    [
+      'vuepress-plugin-live2d-plus',
+      {
+        enable:true,
+        // 模型地址：https://github.com/iCharlesZ/vscode-live2d-models
+        model:{
+          url:'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/girls-frontline/M4A1-1/normal/model.json'
+        },
+        display:{
+          position:'right',
+          width: '405px',
+          height: '400px',
+          xOffset: '35px',
+          yOffset: '5px'
+        },
+        mobile:{
+          show:true
+        },
+        react: {
+          opacity: 0.8
+        }
+      }
+    ]
+  ]
 }
