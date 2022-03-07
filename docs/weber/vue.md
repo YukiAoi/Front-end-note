@@ -390,6 +390,11 @@ export default {
 }
 ```
 
+### keep-alive的生命周期
+
+用`activated`代替`mounted`
+用`deactivated`代替`unmounted`
+
 参考:
 [keep-alive 官网](https://cn.vuejs.org/v2/api/#keep-alive)
 
