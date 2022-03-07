@@ -3,11 +3,11 @@ module.exports = {
   lang: 'zh-CN',
   title: "YukiAoi's front end notes",
   description: '前端学习笔记',
-  head:[['link', { rel: 'icon', href: '/images/logo.png' }]],
+  head:[['link', { rel: 'icon', href: '/images/logo.jpg' }]],
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
-    logo: '/images/logo.png',
+    logo: '/images/logo.jpg',
     // 导航栏
     navbar:[
       {
