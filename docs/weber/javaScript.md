@@ -324,7 +324,7 @@ JS运行的环境。一般为浏览器或者Node。 在浏览器环境中，有J
 
 传送门 ☞ [# 宏任务和微任务](https://juejin.cn/post/7001881781125251086)
 
-#### **Node 环境中的事件环（Event Loop)**
+#### **Node 环境中的事件循环（Event Loop)**
 
 `Node`是基于V8引擎的运行在服务端的`JavaScript`运行环境，在处理高并发、I/O密集(文件操作、网络操作、数据库操作等)场景有明显的优势。虽然用到也是V8引擎，但由于服务目的和环境不同，导致了它的API与原生JS有些区别，其Event Loop还要处理一些I/O，比如新的网络连接等，所以Node的Event Loop(事件环机制)与浏览器的是不太一样。
 
@@ -345,7 +345,7 @@ JS运行的环境。一般为浏览器或者Node。 在浏览器环境中，有J
 
 2.  Promise
 
-    Promise本身是**同步的立即执行函数**， 当在executor中执行resolve或者reject的时候， 此时是异步操作， 会先执行then/catch等，当主栈完成后，才会去调用resolve/reject中存放的方法执行。
+    Promise本身是**同步的立即执行函数**， 当在执行函数中遇到resolve或者reject的时候， 此时是异步操作， 会先执行then/catch等，当主栈完成后，才会去调用resolve/reject中存放的方法执行。
 
     ```js
     console.log('script start')
@@ -361,6 +361,36 @@ JS运行的环境。一般为浏览器或者Node。 在浏览器环境中，有J
     })
     console.log('script end')
     // 输出顺序: script start->promise1->promise1 end->script end->promise2->settimeout
+    
+    // Promise.all()会等待所有的promise程序都返回结果之后执行后续的程序，返回一个新的Promise。
+    let p1 = new Promise((resolve, reject) => {  
+      resolve('success1')
+    })
+    let p2 = new Promise((resolve, reject) => {  
+      resolve('success1')
+    })
+    Promise.all([p1, p2]).then((result) => {  
+      console.log(result)   // ['success1', 'success2']             
+    }).catch((error) => {  
+      console.log(error)
+    })
+
+    //Promise.race()是一组集合中最先解决或最先拒绝的Promise，返回一个新的Promise。
+    let p1 = new Promise((resolve, reject) => {  
+      setTimeout(() => {    
+        resolve('success1')  
+      },1000)
+    })
+    let p2 = new Promise((resolve, reject) => {  
+      setTimeout(() => {    
+        reject('failed2')  
+      }, 1500)
+    })
+    Promise.race([p1, p2]).then((result) => {  
+      console.log(result)
+    }).catch((error) => {  
+      console.log(error)  //  'success1'    
+    })
     ```
 
 3.  async/await
