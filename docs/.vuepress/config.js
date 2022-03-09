@@ -126,7 +126,7 @@ module.exports = {
           show:true
         },
         react: {
-          opacity: 0.8
+          opacity: 1
         }
       }
     ]
