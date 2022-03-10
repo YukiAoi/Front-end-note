@@ -79,32 +79,3 @@
   let arr = Array.from(arguments)
   let arr = [...arguments]
 ```
-### 拖动窗口保持正方形
-1. 使用vh
-```css
-  .a{
-    width:100%;
-    height:100vh;
-  }
-```
-2. 使用垂直方向的padding
-```css
-.a{
-  width:100%;
-  height:0;
-  padding-bottom:100%;
-}
-```
-3. 使用伪元素的margin-top
-```css
-.a{
-  width:100%;
-  <!-- BFC问题，清除浮动 -->
-  overflow:hidden;
-}
-.a:after{
-  content:'';
-  margin-top:100%;
-  display:block:
-}
-```

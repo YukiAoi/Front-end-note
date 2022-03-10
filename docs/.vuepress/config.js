@@ -30,6 +30,7 @@ module.exports = {
           },
           {
             text: 'CSS',
+            collapsible:true,
             children:[
               {
                 text:'选择器',

@@ -135,3 +135,46 @@ div:after{
   clear: both;
 }
 ```
+
+### flex:1
+
+1. flex:1 === flex:1(flex-grow) 1(flex-shrink) 0(flex-basis)
+1. flex-grow：放大比例，默认为0，即有空间也不会放大
+1. flex-shrink：缩小比例，默认为1，即空间不足会缩小
+1. flex-basis：分配多余空间之前，会占据的主轴空间，默认auto，即本身的大小
+
+## 伪类伪元素区别
+
+1. 伪类是`:`，伪元素是`::`
+2. 是否需要添加新元素才能达成目的，是的话就是伪元素，不是的话就是伪类
+
+### 拖动窗口保持正方形
+
+1. 使用vh
+```css
+  .a{
+    width:100%;
+    height:100vh;
+  }
+```
+2. 使用垂直方向的padding
+```css
+.a{
+  width:100%;
+  height:0;
+  padding-bottom:100%;
+}
+```
+3. 使用伪元素的margin-top
+```css
+.a{
+  width:100%;
+  <!-- BFC问题，清除浮动 -->
+  overflow:hidden;
+}
+.a:after{
+  content:'';
+  margin-top:100%;
+  display:block:
+}
+```
