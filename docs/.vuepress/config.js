@@ -76,7 +76,33 @@ module.exports = {
           },
           {
             text: 'JavaScript',
-            link: '/weber/javaScript.md'
+            collapsible:true,
+            children:[
+              {
+                text:'数据类型',
+                link:'/weber/js/dataType.md'
+              },
+              {
+                text:'变量声明',
+                link:'/weber/js/declare.md'
+              },
+              {
+                text:'作用域',
+                link:'/weber/js/scope.md'
+              },
+              {
+                text:'闭包',
+                link:'/weber/js/closure.md'
+              },
+              {
+                text:'this',
+                link:'/weber/js/this.md'
+              },
+              {
+                text:'原型和原型链',        
+                link:'/weber/js/prototype.md'
+              }
+            ]
           },
           {
             text: 'TypeScript',

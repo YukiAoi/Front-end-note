@@ -1,14 +1,5 @@
 ### vue的router以及路由守卫
 
-### 箭头函数的原理（应该是与普通函数的区别）
-1. 没有自己的`this`
-1. 没有`constructor`
-1. 不能通过`new`调用，也没有`new.target`
-1. 没有`arguments`对象
-1. `call()`，`bind()`和`apply()`都只传入一个参数
-1. 没有`原型属性`
-1. 不能当作`generator`函数
-
 ### promise对象
 
 ### 数组去重方法
@@ -35,12 +26,6 @@
 1. map
 1. forof
 1. keys，values，entries（keys是索引，values是值，entris是两个一起）
-
-### 判断数据类型
-1. typeof，不能判断object，array，null和arguments
-1. instanceof，不能判断string，number，boolean
-1. object.prototype.toString.call()
-1. isArray，isNAN和isFinite
 
 ### promise优缺点
 1. 对象的状态不受外界影响
