@@ -138,7 +138,49 @@ module.exports = {
           },
           {
             text: 'Vue',
-            link: '/weber/vue.md'
+            collapsible:true,
+            children:[
+              {
+                text: '视图模型双向绑定',
+                link: '/weber/vue/mvvm.md'
+              },
+              {
+                text: '生命周期',
+                link: '/weber/vue/lifeCycle.md'
+              },
+              {
+                text: '计算属性与属性监听',
+                link: '/weber/vue/computedAndWatch.md'
+              },
+              {
+                text: 'diff算法',
+                link: '/weber/vue/diff.md'
+              },
+              {
+                text: '组件通信',
+                link: '/weber/vue/communication.md'
+              },
+              {
+                text: 'nextTick',
+                link: '/weber/vue/nextTick.md'
+              },
+              {
+                text: '插槽',
+                link: '/weber/vue/slot.md'
+              },
+              {
+                text: 'keep-alive',
+                link: '/weber/vue/keepAlive.md'
+              },
+              {
+                text: '混合',
+                link: '/weber/vue/mixin.md'
+              },
+              {
+                text: '路由',
+                link: '/weber/vue/router.md'
+              }
+            ]
           },
           {
             text: 'React',
