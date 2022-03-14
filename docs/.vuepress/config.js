@@ -101,6 +101,34 @@ module.exports = {
               {
                 text:'原型和原型链',        
                 link:'/weber/js/prototype.md'
+              },
+              {
+                text:'事件循环（eventLoop）',        
+                link:'/weber/js/eventLoop.md'
+              },
+              {
+                text:'防抖节流',        
+                link:'/weber/js/antiShakeAndThrottling.md'
+              },
+              {
+                text:'深浅拷贝',        
+                link:'/weber/js/copy.md'
+              },
+              {
+                text:'数组方法',        
+                link:'/weber/js/arrayFunction.md'
+              },
+              {
+                text:'promise',        
+                link:'/weber/js/promise.md'
+              },
+              {
+                text:'es6+',        
+                link:'/weber/js/es6plus.md'
+              },
+              {
+                text:'函数柯里化',        
+                link:'/weber/js/currying.md'
               }
             ]
           },
@@ -119,10 +147,6 @@ module.exports = {
           {
             text: 'Electron',
             link: '/weber/electron.md'
-          },
-          {
-            text: '代码优化',
-            link: '/weber/codeOptimization.md'
           }
         ]
       },
@@ -148,10 +172,6 @@ module.exports = {
           {
             text: 'Babel',
             link: '/other/babel.md'
-          },
-          {
-            text: 'questions',
-            link: '/other/questions.md'
           },
           {
             text: '面试题',

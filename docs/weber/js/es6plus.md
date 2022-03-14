@@ -1,4 +1,9 @@
-## 代码优化
+## ES6+
+
+### map和set区别
+
+1. map类似于object，是key:value，set类似于array，是value:value
+1. map的key不能改变，value可以改变，set的value不能改变（因为value就是key）
 
 ### 对象取值（对象解构）
 

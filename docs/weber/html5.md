@@ -24,3 +24,8 @@
 1. webSocket
 1. web存储 localStorage、SessionStorage
 1. 表单控件，calendar、date、time、email、url、search
+
+### `<script><script async><script defer>`的区别
+1. `async`和`defer`都不会阻塞页面渲染
+1. `async`的加载顺序是先加载完成的先执行，一般用于独立脚本
+1. `defer`是按照他们在文档中的顺序加载，一般用于整个dom的脚本
