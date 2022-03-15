@@ -1,33 +1,18 @@
+## Vuex
 
-## Vue 面试专题
+### vuex原理
 
-#### 组件中的data为什么是一个函数？
+1. vuex利用vue的mixin混入机制，在beforeCreate前往store注入组件实例，并注册store的引用属性$store
+2. vuex的state是响应式的，是借助了vue的data是响应式，getter则是借助了vue的computed实现数据监听
 
-1. 一个组件被复用多次的话，也就会创建多个实例。本质上，这些实例用的都是同一个构造函数。
-2. 如果data是对象的话，对象属于引用类型，会影响到所有的实例。所以为了保证组件不同的实例之间data不冲突，data必须是一个函数。
+### 核心模块
+1. `State`：定义了应用的状态数据  
+1. `Getter`：在 store 中定义“getter”（可以认为是 store 的计算属性），就像计算属性一样，getter 的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算  
+1. `Mutation`：是唯一更改 store 中状态的方法，且必须是同步函数  
+1. `Action`：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作  
+1. `Module`：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中
 
-#### 为什么v-for和v-if不建议用在一起
-
-1. 当 v-for 和 v-if 处于同一个节点时，v-for 的优先级比 v-if 更高，这意味着 v-if 将分别重复运行于每个 v-for 循环中。如果要遍历的数组很大，而真正要展示的数据很少时，这将造成很大的性能浪费 
-2. 这种场景建议使用 computed，先对数据进行过滤
-
-注意：3.x 版本中 `v-if` 总是优先于 `v-for` 生效。由于语法上存在歧义，建议避免在同一元素上同时使用两者。比起在模板层面管理相关逻辑，更好的办法是通过创建计算属性筛选出列表，并以此创建可见元素。
-
-解惑传送门 ☞ [# v-if 与 v-for 的优先级对比非兼容](https://v3.cn.vuejs.org/guide/migration/v-if-v-for.html#%E6%A6%82%E8%A7%88)
-
-### Vuex的理解及使用场景
-
-Vuex 是一个专为 Vue 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）。
-1.  Vuex 的状态存储是响应式的；当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新
-2. 改变 store 中的状态的唯一途径就是显式地提交 (commit) mutation， 这样使得我们可以方便地跟踪每一个状态的变化 Vuex主要包括以下几个核心模块：  
-①.`State`：定义了应用的状态数据  
-②.`Getter`：在 store 中定义“getter”（可以认为是 store 的计算属性），就像计算属性一样，getter 的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算  
-③.`Mutation`：是唯一更改 store 中状态的方法，且必须是同步函数  
-④.`Action`：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作  
-⑤.`Module`：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a7249773a1634f779c48f3f0ffabf968~tplv-k3u1fbpfcp-zoom-1.image)
-
-#### 创建一个store
+### 创建一个store
 
 一个简单的store，只提供了一个state和mutation
 
@@ -67,11 +52,11 @@ methods: {
 }
 ```
 
-#### State
+### State
 
 存储在 Vuex 中的数据和 Vue 实例中的`data`遵循相同的规则
 
-##### 在 Vue 组件中获得 Vuex 状态
+#### 在 Vue 组件中获得 Vuex 状态
 
 由于 Vuex 的状态存储是响应式的，从 store 实例中读取状态最简单的方法就是在`计算属性`中返回某个状态：
 
@@ -93,7 +78,7 @@ computed: {
 }
 ```
 
-##### mapState辅助函数
+#### mapState辅助函数
 
 当一个组件需要获取多个状态的时候，将这些状态都声明为计算属性会有些重复和冗余。我们可以使用`mapState`辅助函数帮助我们生成计算属性：
 
@@ -125,7 +110,7 @@ computed: mapState([
 ])
 ```
 
-##### 扩展运算符
+#### 扩展运算符
 
 ```js
 computed: {
@@ -137,7 +122,7 @@ computed: {
 }
 ```
 
-#### Getter
+### Getter
 
 getter可以认为是 store 的计算属性。
 Getter 接受 state 作为其第一个参数：
@@ -158,7 +143,7 @@ const store = createStore({
 })
 ```
 
-##### 通过属性访问
+#### 通过属性访问
 
 Getter 会暴露为`store.getters`对象，你可以以属性的形式访问这些值：
 
@@ -191,7 +176,7 @@ computed: {
 
 **getter 在通过属性访问时是作为 Vue 的响应式系统的一部分缓存其中的**
 
-##### 通过方法访问
+#### 通过方法访问
 
 也可以通过让 getter 返回一个函数，来实现给 getter 传参
 
@@ -208,7 +193,7 @@ store.getters.getTodoById(2) // -> { id: 2, text: '...', done: false }
 
 **getter 在通过方法访问时，每次都会去进行调用，而不会缓存结果**
 
-##### mapGetters 辅助函数
+#### mapGetters 辅助函数
 
 `mapGetters`辅助函数仅仅是将 store 中的 getter 映射到局部计算属性：
 
@@ -237,7 +222,7 @@ export default {
 })
 ```
 
-#### Mutation
+### Mutation
 
 mutation类似于事件：每个 mutation 都有一个字符串的**事件类型 (type)**和一个**回调函数 (handler)**。
 这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数：
@@ -262,7 +247,7 @@ const store = createStore({
 store.commit('increment')
 ```
 
-##### 提交载荷（Payload）
+#### 提交载荷（Payload）
 
 可以向`store.commit`传入额外的参数，即 mutation 的**载荷（payload）**：
 
@@ -290,7 +275,7 @@ store.commit('increment', {
 })
 ```
 
-##### 对象风格的提交方式
+#### 对象风格的提交方式
 
 提交 mutation 的另一种方式是直接使用包含 type 属性的对象：
 
@@ -307,7 +292,7 @@ mutations: {
 }
 ```
 
-##### 在组件中提交 Mutation
+#### 在组件中提交 Mutation
 
 可以在组件中使用`this.$store.commit('xxx')`提交 mutation，或者使用`mapMutations`辅助函数将组件中的 methods 映射为`store.commit`调用（需要在根节点注入`store`）
 
@@ -330,7 +315,7 @@ export default {
 }
 ```
 
-#### Action
+### Action
 
 `Action`与`Mutation`的不同点在于：
 1. Action 提交的是 mutation，而不是直接变更状态
@@ -364,7 +349,8 @@ actions: {
   }
 }
 ```
-##### 分发 Action
+
+#### 分发 Action
 
 Action 通过`store.dispatch`方法触发：
 
@@ -408,7 +394,7 @@ actions: {
 }
 ```
 
-##### 在组件中分发 Action
+#### 在组件中分发 Action
 
 在组件中使用`this.$store.dispatch('xxx')`分发 action，或者使用`mapActions`辅助函数将组件的 methods 映射为`store.dispatch`调用（需要先在根节点注入`store`）：
 
@@ -431,7 +417,7 @@ export default {
 }
 ```
 
-##### 组合 Action
+#### 组合 Action
 
 `store.dispatch`可以处理被触发的 action 的处理函数返回的 Promise，并且`store.dispatch`仍旧返回 Promise：
 
@@ -477,7 +463,7 @@ actions: {
 
 `一个 store.dispatch 在不同模块中可以触发多个 action 函数。在这种情况下，只有当所有触发函数完成后，返回的 Promise 才会执行。`
 
-#### Module
+### Module
 
 可以将 store 分割成**模块（module）**。每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块
 
@@ -506,9 +492,9 @@ store.state.a // -> moduleA 的状态
 store.state.b // -> moduleB 的状态
 ```
 
-##### 模块的局部状态
+#### 模块的局部状态
 
-块内部的 mutation 和 getter，接收的第一个参数是**模块的局部状态对象**
+模块内部的 mutation 和 getter，接收的第一个参数是**模块的局部状态对象**
 
 ```js
 const moduleA = {
@@ -536,47 +522,4 @@ const moduleA = {
     }
   }
 }
-```
-
-### 修饰符
-
-#### .sync
-可以在子组件中修改`props`中属性的值
-```html
-<!-- 父组件 -->
-<text-document :title.sync="title"></text-document>
-```
-```js
-// 子组件
-this.$emit('update:title', newTitle)
-```
-
-#### .stop
-阻止单击事件继续传播
-```html
-<a @click.stop="doThis"></a>
-```
-
-#### .prevent
-提交事件不再重载页面
-```html
-<form @submit.prevent="onSubmit"></form>
-```
-
-#### .self
-只当在`event.target`是当前元素自身时触发处理函数 即事件不是从内部元素触发的
-```html
-<div @click.self="doThat">...</div>
-```
-
-### 自定义指令
-```js
-// 注册一个全局自定义指令 `v-focus`
-Vue.directive('focus', {
-  // 当被绑定的元素插入到 DOM 中时……
-  inserted: function (el) {
-    // 聚焦元素
-    el.focus()
-  }
-})
 ```

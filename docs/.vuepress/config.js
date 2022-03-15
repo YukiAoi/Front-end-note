@@ -179,6 +179,14 @@ module.exports = {
               {
                 text: '路由',
                 link: '/weber/vue/router.md'
+              },
+              {
+                text: 'vuex',
+                link: '/weber/vue/vuex.md'
+              },
+              {
+                text: '其他',
+                link: '/weber/vue/other.md'
               }
             ]
           },
@@ -209,15 +217,41 @@ module.exports = {
           },
           {
             text: 'Webpack',
-            link: '/other/webpack.md'
+            collapsible:true,
+            children:[
+              {
+                text:'入门',
+                link:'/other/webpack/start.md'
+              },
+              {
+                text:'搭建vue开发环境',
+                link:'/other/webpack/vueEnvironment.md'
+              },
+              {
+                text:'手写webpack',
+                link:'/other/webpack/doitself.md'
+              },
+              {
+                text:'优化',
+                link:'/other/webpack/optimization.md'
+              },
+              {
+                text:'打包策略',
+                link:'/other/webpack/strategy.md'
+              },
+              {
+                text:'webpack原理',
+                link:'/other/webpack/principle.md'
+              },
+              {
+                text:'Plugin和Loader的区别',
+                link:'/other/webpack/pluginAndLoader.md'
+              }
+            ]
           },
           {
             text: 'Babel',
             link: '/other/babel.md'
-          },
-          {
-            text: '面试题',
-            link: '/other/面试题.md'
           }
         ]
       }
