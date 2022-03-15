@@ -13,6 +13,7 @@
 1. 元素的类型和`display属性，决定了这个Box的类型`。不同类型的Box会参与不同的`Formatting Context`。
 
 ### 如何创建BFC
+
 1. 根元素，即HTML元素
 1. float的值不为none
 1. position为absolute或fixed
@@ -20,6 +21,7 @@
 1. overflow的值不为visible
 
 ### 使用场景
+
 1. 去除边距重叠现象
 1. 清除浮动（让父元素的高度包含子浮动元素）
 1. 避免某元素被浮动元素覆盖

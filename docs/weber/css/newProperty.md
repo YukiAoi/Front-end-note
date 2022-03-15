@@ -42,4 +42,3 @@ transform-origin：转换元素的位置（围绕那个点进行转换）。默�
   transform:scale(.8);
 }
 ```
-    

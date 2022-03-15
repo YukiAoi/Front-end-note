@@ -1,6 +1,5 @@
 ## TypeScript
 
-
 ### 什么是TypeScript
 
 TypeScript 是 JavaScript 的加强版，它给 JavaScript 添加了`可选的静态类型和基于类的面向对象编程`，它拓展了 JavaScript 的语法。
@@ -40,7 +39,6 @@ TypeScript 引入了很多面向对象程序设计的特征，包括：
 ```ts
 // 我们希望传入的值是什么类型，返回的值就是什么类型
 // 传入的值可以是任意的类型，这时候就可以用到泛型
-
 // 如果使用 any 的话，就失去了类型检查的意义
 
 function createArray1(length: any, value: any): Array<any> {
@@ -83,7 +81,7 @@ function createArray4(length: number, value: any): Array<any> {
 }
 createArray4(6, '666');
 
-//使用泛型
+// 使用泛型
 // 有关联的地方都改成 <T>
 function createArray<T>(length: number, value: T): Array<T> {
     let result: T[] = [];
