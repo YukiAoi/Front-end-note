@@ -7,8 +7,9 @@
 ```js
 /**
  * 防抖函数  一个需要频繁触发的函数，在规定时间内，只让最后一次生效，前面的不生效
- * @param fn要被节流的函数
- * @param delay规定的时间
+ * @param func 要被节流的函数
+ * @param wait 规定的等待时间
+ * @param immediate 是否执行
  */
 function debounce(func, wait, immediate) {
   var timeout, result;
@@ -49,7 +50,7 @@ function debounce(func, wait, immediate) {
 /**
  * 节流函数 一个函数执行一次后，只有大于设定的执行周期才会执行第二次。有个需要频繁触发的函数，出于优化性能的角度，在规定时间内，只让函数触发的第一次生效，后面的不生效。
  * @param func 要被节流的函数
- * @param wait 需要等待的时间
+ * @param wait 规定的等待时间
  * @param options
  */
 function throttle(func, wait, options) {
