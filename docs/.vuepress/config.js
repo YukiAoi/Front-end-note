@@ -108,7 +108,7 @@ module.exports = {
               },
               {
                 text:'防抖节流',        
-                link:'/weber/js/antiShakeAndThrottling.md'
+                link:'/weber/js/debouncedAndThrottling.md'
               },
               {
                 text:'深浅拷贝',        
