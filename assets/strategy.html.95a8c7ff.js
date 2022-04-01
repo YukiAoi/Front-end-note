@@ -1,0 +1,1 @@
+const t={key:"v-65737c68",path:"/other/webpack/strategy.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u6253\u5305\u7B56\u7565",slug:"\u6253\u5305\u7B56\u7565",children:[]}],git:{updatedTime:1647324919e3,contributors:[{name:"YukiAoi",email:"xxz530990200@gmail.com",commits:1}]},filePathRelative:"other/webpack/strategy.md"};export{t as data};

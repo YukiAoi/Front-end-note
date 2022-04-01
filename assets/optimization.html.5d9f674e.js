@@ -1,0 +1,1 @@
+const t={key:"v-09e965dc",path:"/other/webpack/optimization.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u4F18\u5316",slug:"\u4F18\u5316",children:[]}],git:{updatedTime:1647324919e3,contributors:[{name:"YukiAoi",email:"xxz530990200@gmail.com",commits:1}]},filePathRelative:"other/webpack/optimization.md"};export{t as data};

@@ -1,0 +1,1 @@
+const e={key:"v-14e3ae12",path:"/weber/css/newProperty.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"CSS3\u65B0\u7279\u6027",slug:"css3\u65B0\u7279\u6027",children:[]}],git:{updatedTime:1647348078e3,contributors:[{name:"YukiAoi",email:"xxz530990200@gmail.com",commits:2}]},filePathRelative:"weber/css/newProperty.md"};export{e as data};

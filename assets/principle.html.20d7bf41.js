@@ -1,0 +1,1 @@
+const e={key:"v-0d4f7917",path:"/other/webpack/principle.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"webpack\u539F\u7406",slug:"webpack\u539F\u7406",children:[]}],git:{updatedTime:1647324919e3,contributors:[{name:"YukiAoi",email:"xxz530990200@gmail.com",commits:1}]},filePathRelative:"other/webpack/principle.md"};export{e as data};
