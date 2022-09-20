@@ -252,6 +252,10 @@ module.exports = {
           {
             text: 'Babel',
             link: '/other/babel.md'
+          },
+          {
+            text: 'Node',
+            link: '/other/node.md'
           }
         ]
       }
