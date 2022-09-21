@@ -89,3 +89,23 @@ nvm ls
   "build": "vue-cli-service build"
 }
 ```
+
+### Node内存泄漏
+
+#### package.json
+
+`set NODE_OPTIONS=--max-old-space-size=4096`
+
+```js
+// before
+"scripts": {
+  "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve --mode serve.dev",
+  "build": "vue-cli-service build"
+}
+
+// after
+"scripts": {
+  "serve": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=4096 && vue-cli-service serve --mode serve.dev",
+  "build": "vue-cli-service build"
+}
+```
