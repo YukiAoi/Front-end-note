@@ -26,7 +26,7 @@ module.exports = {
       {
         text: "Vue部分",
         link: "/vue/",
-        children: ["vue", "spa", "if_show"],
+        children: ["vue", "spa", "if_show", "new_vue"],
       },
       // {
       //   text: "前端",
