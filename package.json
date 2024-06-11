@@ -17,6 +17,7 @@
     "vuepress-plugin-search-pro": "^2.0.0-rc.48"
   },
   "dependencies": {
+    "vite-plugin-md": "^0.21.5",
     "vuepress-plugin-oh-my-live2d": "^0.19.3",
     "vuepress-plugin-remove-html-extension": "^1.11.0"
   }

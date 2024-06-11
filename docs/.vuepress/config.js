@@ -4,9 +4,11 @@ import { defineUserConfig } from "vuepress";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { removeHtmlExtensionPlugin } from "vuepress-plugin-remove-html-extension";
 import { oml2dPlugin } from "vuepress-plugin-oh-my-live2d";
-
+import { defineConfig } from "vite";
 export default defineUserConfig({
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: defineConfig(),
+  }),
   // 主题和它的配置
   theme: defaultTheme({
     logo: "/images/logo.jpg",
@@ -17,12 +19,25 @@ export default defineUserConfig({
         link: "/vue/vue.md",
       },
     ],
+    // sidebar,
     sidebar: [
       {
         text: "Vue部分",
         prefix: "/vue/",
         link: "/vue/",
-        children: ["vue", "spa", "if_show", "new_vue"],
+        children: [
+          "vue",
+          "spa",
+          "if_show",
+          "new_vue",
+          "lifecycle",
+          "if_for",
+          "first_page_time",
+          "data",
+          "data_object_add_attrs",
+          "components_plugin",
+          "communication",
+        ],
       },
     ],
     editLink: false,
@@ -74,5 +89,6 @@ export default defineUserConfig({
         },
       },
     }),
+    // myPlugin(__dirname, "./plugins/file-list-plugin"),
   ],
 });
