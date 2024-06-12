@@ -194,7 +194,43 @@ $root属性指向根Vue实例，$parent 属性指向当前组件的直接父组�
 
 ### $attrs和$listeners
 
-先留空
+- 用 v-bind="$attrs" 传⼊内部组件
+- 可以将非 props 的特性（不包括 class 和 style）传递给子组件
+
+```vue
+<template>
+  <div>
+    <child-component v-bind="$attrs"></child-component>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "ParentComponent",
+  props: {
+    // 声明了一些 props
+    propA: String,
+    propB: Number,
+  },
+};
+</script>
+```
+
+- $listeners 包含了父组件传递给当前组件的所有事件监听器
+
+```vue
+<template>
+  <div>
+    <child-component v-on="$listeners"></child-component>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "ParentComponent",
+};
+</script>
+```
 
 ### provide 和 inject
 
@@ -222,3 +258,10 @@ export default {
 };
 </script>
 ```
+
+### vuex
+
+- state 是用来保存共享变量的
+- getter 用来获取共享变量的值（相当于 store 中的计算属性）
+- mutations 用来存放修改 state 的方法
+- actions 也是存放修改 state 的方法，不过通常是异步操作
