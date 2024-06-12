@@ -37,6 +37,7 @@ export default defineUserConfig({
           "data_object_add_attrs",
           "components_plugin",
           "communication",
+          "bind",
         ],
       },
     ],
