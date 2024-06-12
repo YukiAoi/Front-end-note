@@ -38,6 +38,7 @@ export default defineUserConfig({
           "components_plugin",
           "communication",
           "bind",
+          "nextTicket",
         ],
       },
     ],
