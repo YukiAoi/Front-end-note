@@ -43,6 +43,7 @@ export default defineUserConfig({
           "slot",
           "observable",
           "key",
+          "keepalive",
         ],
       },
     ],
