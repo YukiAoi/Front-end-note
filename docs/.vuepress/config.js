@@ -39,6 +39,8 @@ export default defineUserConfig({
           "communication",
           "bind",
           "nextTicket",
+          "mixin",
+          "slot",
         ],
       },
     ],
