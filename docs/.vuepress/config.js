@@ -41,6 +41,7 @@ export default defineUserConfig({
           "nextTicket",
           "mixin",
           "slot",
+          "observable",
         ],
       },
     ],
