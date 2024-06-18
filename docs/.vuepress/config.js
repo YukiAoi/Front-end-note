@@ -42,6 +42,7 @@ export default defineUserConfig({
           "mixin",
           "slot",
           "observable",
+          "key",
         ],
       },
     ],
