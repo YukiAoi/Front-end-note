@@ -44,6 +44,8 @@ export default defineUserConfig({
           "observable",
           "key",
           "keepalive",
+          "modifier",
+          "directive",
         ],
       },
     ],
