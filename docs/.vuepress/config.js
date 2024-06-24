@@ -46,6 +46,8 @@ export default defineUserConfig({
           "keepalive",
           "modifier",
           "directive",
+          "filter",
+          "vnode",
         ],
       },
     ],
