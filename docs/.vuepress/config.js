@@ -49,6 +49,7 @@ export default defineUserConfig({
           "filter",
           "vnode",
           "diff",
+          "axios",
         ],
       },
     ],
