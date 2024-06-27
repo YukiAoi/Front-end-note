@@ -50,6 +50,7 @@ export default defineUserConfig({
           "vnode",
           "diff",
           "axios",
+          "ssr",
         ],
       },
     ],
