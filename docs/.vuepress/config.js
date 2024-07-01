@@ -53,6 +53,7 @@ export default defineUserConfig({
           "ssr",
           "structure",
           "permission",
+          "cors",
         ],
       },
     ],
