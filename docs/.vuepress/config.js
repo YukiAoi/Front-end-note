@@ -56,6 +56,7 @@ export default defineUserConfig({
           "cors",
           "404",
           "error",
+          "vue3_vue2",
         ],
       },
     ],
