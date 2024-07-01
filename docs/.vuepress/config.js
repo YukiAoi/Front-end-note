@@ -55,6 +55,7 @@ export default defineUserConfig({
           "permission",
           "cors",
           "404",
+          "error",
         ],
       },
     ],
