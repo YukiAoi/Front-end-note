@@ -51,6 +51,8 @@ export default defineUserConfig({
           "diff",
           "axios",
           "ssr",
+          "structure",
+          "permission",
         ],
       },
     ],
