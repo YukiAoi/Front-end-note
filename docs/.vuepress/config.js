@@ -59,6 +59,12 @@ export default defineUserConfig({
           "vue3_vue2",
         ],
       },
+      {
+        text: "Vue3",
+        prefix: "/vue3/",
+        link: "/vue3/",
+        children: ["goal"],
+      },
     ],
     editLink: false,
     locales: {
