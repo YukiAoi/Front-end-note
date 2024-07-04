@@ -143,7 +143,7 @@ export default {
 ### 模板指令
 
 - 组件上 v-model 用法已更改
-- <template v-for>和 非 v-for 节点上 key 用法已更改
+- `<template v-for>`和 非 v-for 节点上 key 用法已更改
 - 在同一元素上使用的 v-if 和 v-for 优先级已更改
 - v-bind="object" 现在排序敏感
 - v-for 中的 ref 不再注册 ref 数组
@@ -175,7 +175,7 @@ export default {
 - 来自 mixin 的 data 选项现在可简单地合并
 - attribute 强制策略已更改
 - 一些过渡 class 被重命名
-- <template> 没有特殊指令的标记 (v-if/else-if/else、v-for 或 v-slot) 现在被视为普通元素，并将生成原生的 <template> 元素，而不是渲染其内部内容
+- `<template>` 没有特殊指令的标记 (v-if/else-if/else、v-for 或 v-slot) 现在被视为普通元素，并将生成原生的 `<template>` 元素，而不是渲染其内部内容
 
 ### 移除 API
 
