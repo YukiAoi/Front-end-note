@@ -58,6 +58,7 @@ export default defineUserConfig({
           "error",
           "vue3_vue2",
           "proxy",
+          "treeShaking",
         ],
       },
       {
