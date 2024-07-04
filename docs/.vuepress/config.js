@@ -64,7 +64,7 @@ export default defineUserConfig({
         text: "Vue3",
         prefix: "/vue3/",
         link: "/vue3/",
-        children: ["goal", "performance"],
+        children: ["goal", "performance", "proxy", "composition"],
       },
     ],
     editLink: false,
