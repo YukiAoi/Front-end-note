@@ -72,6 +72,12 @@ export default defineUserConfig({
           "modal_component",
         ],
       },
+      {
+        text: "Es6",
+        prefix: "/es6/",
+        link: "/es6/var_let_const",
+        children: ["var_let_const"],
+      },
     ],
     editLink: false,
     locales: {
