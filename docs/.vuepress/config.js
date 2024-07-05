@@ -24,7 +24,7 @@ export default defineUserConfig({
       {
         text: "Vue部分",
         prefix: "/vue/",
-        link: "/vue/",
+        link: "/vue/vue",
         children: [
           "vue",
           "spa",
@@ -57,15 +57,20 @@ export default defineUserConfig({
           "404",
           "error",
           "vue3_vue2",
-          "proxy",
-          "treeShaking",
         ],
       },
       {
         text: "Vue3",
         prefix: "/vue3/",
-        link: "/vue3/",
-        children: ["goal", "performance", "proxy", "composition"],
+        link: "/vue3/goal",
+        children: [
+          "goal",
+          "performance",
+          "proxy",
+          "composition",
+          "treeShaking",
+          "modal_component",
+        ],
       },
     ],
     editLink: false,
