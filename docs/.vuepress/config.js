@@ -5,6 +5,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { removeHtmlExtensionPlugin } from "vuepress-plugin-remove-html-extension";
 import { oml2dPlugin } from "vuepress-plugin-oh-my-live2d";
 import { defineConfig } from "vite";
+// import defineClientConfig from "./client";
 export default defineUserConfig({
   bundler: viteBundler({
     viteOptions: defineConfig(),
@@ -16,7 +17,7 @@ export default defineUserConfig({
     navbar: [
       {
         text: "Vue",
-        link: "/vue/vue.md",
+        link: "/vue/vue",
       },
     ],
     // sidebar,
@@ -76,7 +77,7 @@ export default defineUserConfig({
         text: "Es6",
         prefix: "/es6/",
         link: "/es6/var_let_const",
-        children: ["var_let_const", "array", "object"],
+        children: ["var_let_const", "array", "object", "function"],
       },
     ],
     editLink: false,
@@ -128,6 +129,7 @@ export default defineUserConfig({
         },
       },
     }),
+
     // myPlugin(__dirname, "./plugins/file-list-plugin"),
   ],
 });
