@@ -77,7 +77,7 @@ export default defineUserConfig({
         text: "Es6",
         prefix: "/es6/",
         link: "/es6/var_let_const",
-        children: ["var_let_const", "array", "object", "function"],
+        children: ["var_let_const", "array", "object", "function", "set_map"],
       },
     ],
     editLink: false,
