@@ -33,8 +33,8 @@ keep-alive 可以设置以下 props 属性：
 
 设置了 keep-alive 缓存的组件，会多出两个生命周期钩子（activated 与 deactivated）：
 
-- 首次进入组件时：beforeRouteEnter > beforeCreate > created> mounted > activated > ... ... > beforeRouteLeave > deactivated
-- 再次进入组件时：beforeRouteEnter >activated > ... ... > beforeRouteLeave > deactivated
+- 首次进入组件时：beforeRouteEnter > beforeCreate > created> beforeMount > mounted > activated > ... ... > beforeRouteLeave > deactivated
+- 再次进入组件时：beforeRouteEnter > activated > ... ... > beforeRouteLeave > deactivated
 
 ## 使用场景
 

@@ -1,4 +1,4 @@
-# vue3 和 vue2 地区别
+# vue3 和 vue2 的区别
 
 ## Vue3 介绍
 

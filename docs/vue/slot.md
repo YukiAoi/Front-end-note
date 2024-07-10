@@ -82,7 +82,7 @@ slot 使用 name 属性来表示插槽的名字，不传就是默认插槽
 
 ## 小结
 
-- v-slot 属性只能在<template>上使用，但在只有默认插槽时可以在组件标签上使用
+- v-slot 属性只能在`<template>`上使用，但在只有默认插槽时可以在组件标签上使用
 - 默认插槽名为 default，可以省略 default 直接写 v-slot
 - 缩写为#时不能不写参数，写成#default
 - 可以通过解构获取 v-slot={user}，还可以重命名 v-slot="{user: newName}"和定义默认值 v-slot="{user = '默认值'}"

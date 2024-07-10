@@ -45,7 +45,7 @@ Vue.prototype._init = function (options?: Object) {
   }
 ```
 
-定义 data 会进行数据校验，这时候 vm 实例为 undefined，进入 if 判断，若 0data 类型不是 function，则出现警告提示
+定义 data 会进行数据校验，这时候 vm 实例为 undefined，进入 if 判断，若 data 类型不是 function，则出现警告提示
 
 ```js
 // /vue-dev/src/core/instance/init.js

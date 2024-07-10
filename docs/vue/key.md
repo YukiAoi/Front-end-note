@@ -8,7 +8,7 @@ key 是给每一个 vnode 的唯一 id，也是 diff 的一种优化策略，可
 
 使用 v-for 时：
 
-- 如果不用 key，Vue 会采用就地复地原则：最小化 element 的移动，并且会尝试尽最大程度在同适当的地方对相同类型的 element，做 patch 或者 reuse。
+- 如果不用 key，Vue 会采用就地复用的原则：最小化 element 的移动，并且会尝试尽最大程度在同适当的地方对相同类型的 element，做 patch 或者 reuse。
 - 如果使用了 key，Vue 会根据 keys 的顺序记录 element，曾经拥有了 key 的 element 如果不再出现的话，会被直接 remove 或者 destoryed
 
 用+new Date()生成的时间戳作为 key，手动强制触发重新渲染

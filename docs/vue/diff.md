@@ -71,7 +71,7 @@ function patch(oldVnode, vnode, hydrating, removeOnly) {
 patch 函数前两个参数位为 oldVnode 和 Vnode ，分别代表新的节点和之前的旧节点，主要做了四个判断：
 
 - 没有新节点，触发旧节点的 destory 钩子
-- 没有旧节点，，直接新建，所以只调用 createElm
+- 没有旧节点，直接新建，所以只调用 createElm
 - 旧节点和新节点自身一样，通过 sameVnode 判断节点是否一样，一样时，调用 patchVnode 去处理这两个节点
 - 旧节点和新节点自身不一样，当两个节点不一样的时候，创建新节点，删除旧节点
 
