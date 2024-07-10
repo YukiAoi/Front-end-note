@@ -84,6 +84,7 @@ export default defineUserConfig({
           "function",
           "set_map",
           "promise",
+          "generator",
         ],
       },
     ],
