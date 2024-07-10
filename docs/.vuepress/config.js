@@ -85,6 +85,7 @@ export default defineUserConfig({
           "set_map",
           "promise",
           "generator",
+          "proxy",
         ],
       },
     ],
