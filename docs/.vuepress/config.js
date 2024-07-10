@@ -86,6 +86,7 @@ export default defineUserConfig({
           "promise",
           "generator",
           "proxy",
+          "module",
         ],
       },
     ],
