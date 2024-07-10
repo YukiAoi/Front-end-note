@@ -90,6 +90,12 @@ export default defineUserConfig({
           "decorator",
         ],
       },
+      {
+        text: "Javascript",
+        prefix: "/javascript/",
+        link: "/javascript/data_type",
+        children: ["data_type"],
+      },
     ],
     editLink: false,
     locales: {
