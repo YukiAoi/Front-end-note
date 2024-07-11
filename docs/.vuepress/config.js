@@ -94,7 +94,7 @@ export default defineUserConfig({
         text: "Javascript",
         prefix: "/javascript/",
         link: "/javascript/data_type",
-        children: ["data_type", "array_api"],
+        children: ["data_type", "array_api", "string_api"],
       },
     ],
     editLink: false,
