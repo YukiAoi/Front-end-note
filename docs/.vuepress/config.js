@@ -100,6 +100,7 @@ export default defineUserConfig({
           "string_api",
           "type_conversion",
           "equal",
+          "copy",
         ],
       },
     ],
