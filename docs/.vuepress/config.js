@@ -101,6 +101,8 @@ export default defineUserConfig({
           "equal",
           "copy",
           "closure",
+          "scope",
+          "prototype",
         ],
       },
     ],
