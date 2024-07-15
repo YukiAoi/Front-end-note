@@ -5,7 +5,6 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { removeHtmlExtensionPlugin } from "vuepress-plugin-remove-html-extension";
 import { oml2dPlugin } from "vuepress-plugin-oh-my-live2d";
 import { defineConfig } from "vite";
-// import defineClientConfig from "./client";
 export default defineUserConfig({
   bundler: viteBundler({
     viteOptions: defineConfig(),
@@ -101,6 +100,7 @@ export default defineUserConfig({
           "type_conversion",
           "equal",
           "copy",
+          "closure",
         ],
       },
     ],
