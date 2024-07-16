@@ -150,7 +150,7 @@ obj.m.apply(obj); // 1
 
 ## 箭头函数
 
-箭头函数的 this 指向它的声明对象
+箭头函数的 this 指向它的定义对象
 
 ```js
 const obj = {
