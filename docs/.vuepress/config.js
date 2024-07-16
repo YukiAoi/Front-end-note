@@ -105,6 +105,7 @@ export default defineUserConfig({
           "prototype",
           "inherit",
           "this",
+          "context_stack",
         ],
       },
     ],
