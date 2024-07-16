@@ -192,3 +192,57 @@ let sum = (num1, num2) => {
 - 不同的类型数据导致赋值变量时的不同：
   - 简单类型赋值，是生成相同的值，两个对象对应不同的地址
   - 复杂类型赋值，是将保存对象的内存地址赋值给另一个变量。也就是两个变量指向堆内存中同一个对象
+
+## 检测数据类型
+
+### typeof
+
+主要用于检测基本数据类型，用于判断一个引用类型是否属于某构造函数，还可以在继承关系中用来判断一个实例是否属于它的父类型
+
+```js
+console.log(typeof 1); // number
+console.log(typeof true); // boolean
+console.log(typeof "mc"); // string
+console.log(typeof Symbol); // function
+console.log(typeof function () {}); // function
+console.log(typeof console.log()); // function
+console.log(typeof []); // object
+console.log(typeof {}); // object
+console.log(typeof null); // object
+console.log(typeof undefined); // undefined
+```
+
+### instanceof
+
+主要用于检测引用数据类型
+
+```js
+console.log(1 instanceof Number); // false
+console.log(true instanceof Boolean); // false
+console.log("str" instanceof String); // false
+console.log([] instanceof Array); // true
+console.log(function () {} instanceof Function); // true
+console.log({} instanceof Object); // true
+```
+
+### Object.prototype.toString.call()
+
+用原型对象检测
+
+```js
+var toString = Object.prototype.toString;
+console.log(toString.call(1)); //[object Number]
+console.log(toString.call(true)); //[object Boolean]
+console.log(toString.call("mc")); //[object String]
+console.log(toString.call([])); //[object Array]
+console.log(toString.call({})); //[object Object]
+console.log(toString.call(function () {})); //[object Function]
+console.log(toString.call(undefined)); //[object Undefined]
+console.log(toString.call(null)); //[object Null]
+```
+
+### isXXX
+
+1. Array.isArray()
+2. Number.isNAN()
+3. Number.isFinite()
