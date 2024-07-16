@@ -14,14 +14,36 @@ diff 算法是一种通过同层的树节点进行比较的高效算法，有两
 diff 整体策略为：深度优先，同层比较
 
 1. 比较只会在同层级进行, 不会跨层级比较
+
+![diff-同级比较](../assets/image/diff-%E5%90%8C%E7%BA%A7%E6%AF%94%E8%BE%83.png)
+
 2. 比较的过程中，循环从两边向中间收拢
+
+![diff-循环向中间收拢](../assets/image/diff-%E5%BE%AA%E7%8E%AF%E5%90%91%E4%B8%AD%E9%97%B4%E6%94%B6%E6%8B%A2.png)
 
 简单描述一下就是：
 
 1. 新旧节点的 startIndex 和 endIndex 同时从两边向中间收拢，开始循环
+
+![diff-新旧节点](../assets/image/diff-%E6%96%B0%E6%97%A7%E8%8A%82%E7%82%B9.png)
+
 2. 如果循环中，对比后发现有一样的节点，就将旧节点作为 diff 后的真实节点，并且相同节点上的 index 往中间各移动一位（startIndex 向后移动，endIndex 向前移动），并开始下一次循环
+
+![diff-第一次循环](../assets/image/diff-%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%BE%AA%E7%8E%AF.png)
+
+![diff-第二次循环](../assets/image/diff-%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BE%AA%E7%8E%AF.png)
+
 3. 如果循环中，对比后发现没有一样的节点，就直接将新节点作为 diff 后的真实节点，并且新节点的 startIndex 向后移动一位，开始下一次循环
+
+![diff-第三次循环](../assets/image/diff-%E7%AC%AC%E4%B8%89%E6%AC%A1%E5%BE%AA%E7%8E%AF.png)
+
+![diff-第四次循环](../assets/image/diff-%E7%AC%AC%E5%9B%9B%E6%AC%A1%E5%BE%AA%E7%8E%AF.png)
+
+![diff-第五次循环](../assets/image/diff-%E7%AC%AC%E4%BA%94%E6%AC%A1%E5%BE%AA%E7%8E%AF.png)
+
 4. 如果旧节点的 startIndex 大于 endIndex 了，说明旧节点已经全部循环完毕，就直接将新节点从 startIndex 到 endIndex 的节点都作为 diff 后的正式节点
+
+![diff-第六次循环](../assets/image/diff-%E7%AC%AC%E5%85%AD%E6%AC%A1%E5%BE%AA%E7%8E%AF.png)
 
 ## 原理
 

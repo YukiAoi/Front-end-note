@@ -63,7 +63,7 @@ var proxy = new Proxy(person, {
 proxy.name; // "张三"
 ```
 
-get 能够对数组增删改查进行拦截
+get 能够对数组增删查改进行拦截
 
 ```js
 // 数组读取负数的索引
