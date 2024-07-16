@@ -104,6 +104,7 @@ export default defineUserConfig({
           "scope",
           "prototype",
           "inherit",
+          "this",
         ],
       },
     ],
