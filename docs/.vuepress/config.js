@@ -106,6 +106,7 @@ export default defineUserConfig({
           "inherit",
           "this",
           "context_stack",
+          "event_model",
         ],
       },
     ],
