@@ -103,6 +103,7 @@ export default defineUserConfig({
           "closure",
           "scope",
           "prototype",
+          "inherit",
         ],
       },
     ],
