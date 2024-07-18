@@ -109,6 +109,7 @@ export default defineUserConfig({
           "event_model",
           "typeof_instanceof",
           "event_agent",
+          "new",
         ],
       },
     ],
