@@ -112,6 +112,7 @@ export default defineUserConfig({
           "new",
           "ajax",
           "bind_call_apply",
+          "regexp",
         ],
       },
     ],
