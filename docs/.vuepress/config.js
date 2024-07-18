@@ -110,6 +110,7 @@ export default defineUserConfig({
           "typeof_instanceof",
           "event_agent",
           "new",
+          "ajax",
         ],
       },
     ],
