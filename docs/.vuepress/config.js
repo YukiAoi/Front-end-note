@@ -108,6 +108,7 @@ export default defineUserConfig({
           "context_stack",
           "event_model",
           "typeof_instanceof",
+          "event_agent",
         ],
       },
     ],
