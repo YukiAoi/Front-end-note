@@ -113,6 +113,7 @@ export default defineUserConfig({
           "ajax",
           "bind_call_apply",
           "regexp",
+          "event_loop",
         ],
       },
     ],
