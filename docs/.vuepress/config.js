@@ -111,6 +111,7 @@ export default defineUserConfig({
           "event_agent",
           "new",
           "ajax",
+          "bind_call_apply",
         ],
       },
     ],
