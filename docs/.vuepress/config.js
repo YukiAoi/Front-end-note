@@ -115,6 +115,7 @@ export default defineUserConfig({
           "regexp",
           "event_loop",
           "dom",
+          "bom",
         ],
       },
     ],
