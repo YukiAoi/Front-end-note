@@ -117,6 +117,7 @@ export default defineUserConfig({
           "dom",
           "bom",
           "recursion",
+          "memory_leak",
         ],
       },
     ],
