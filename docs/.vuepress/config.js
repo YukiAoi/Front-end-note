@@ -114,6 +114,7 @@ export default defineUserConfig({
           "bind_call_apply",
           "regexp",
           "event_loop",
+          "dom",
         ],
       },
     ],
