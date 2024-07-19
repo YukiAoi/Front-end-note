@@ -116,6 +116,7 @@ export default defineUserConfig({
           "event_loop",
           "dom",
           "bom",
+          "recursion",
         ],
       },
     ],
