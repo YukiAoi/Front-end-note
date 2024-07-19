@@ -118,6 +118,7 @@ export default defineUserConfig({
           "bom",
           "recursion",
           "memory_leak",
+          "cache",
         ],
       },
     ],
