@@ -119,6 +119,7 @@ export default defineUserConfig({
           "recursion",
           "memory_leak",
           "cache",
+          "functional_programming",
         ],
       },
     ],
