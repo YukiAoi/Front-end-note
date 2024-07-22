@@ -125,6 +125,7 @@ export default defineUserConfig({
           "debounce_throttle",
           "visible",
           "continue_to_upload",
+          "pull_up_loading_pull_down_refresh",
         ],
       },
     ],
