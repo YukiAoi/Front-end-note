@@ -126,6 +126,7 @@ export default defineUserConfig({
           "visible",
           "continue_to_upload",
           "pull_up_loading_pull_down_refresh",
+          "single_sign_on",
         ],
       },
     ],
