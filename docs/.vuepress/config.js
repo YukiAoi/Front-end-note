@@ -120,6 +120,7 @@ export default defineUserConfig({
           "memory_leak",
           "cache",
           "functional_programming",
+          "function_cache",
         ],
       },
     ],
