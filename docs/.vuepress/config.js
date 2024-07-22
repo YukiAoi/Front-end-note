@@ -122,6 +122,7 @@ export default defineUserConfig({
           "functional_programming",
           "function_cache",
           "loss_accuracy",
+          "debounce_throttle",
         ],
       },
     ],
