@@ -123,6 +123,7 @@ export default defineUserConfig({
           "function_cache",
           "loss_accuracy",
           "debounce_throttle",
+          "visible",
         ],
       },
     ],
