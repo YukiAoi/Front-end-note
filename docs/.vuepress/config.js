@@ -124,6 +124,7 @@ export default defineUserConfig({
           "loss_accuracy",
           "debounce_throttle",
           "visible",
+          "continue_to_upload",
         ],
       },
     ],
