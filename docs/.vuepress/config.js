@@ -121,6 +121,7 @@ export default defineUserConfig({
           "cache",
           "functional_programming",
           "function_cache",
+          "loss_accuracy",
         ],
       },
     ],
