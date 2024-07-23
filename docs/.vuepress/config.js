@@ -130,6 +130,12 @@ export default defineUserConfig({
           "security",
         ],
       },
+      {
+        text: "Css",
+        prefix: "/css/",
+        link: "/css/box",
+        children: ["box", "selector"],
+      },
     ],
     editLink: false,
     locales: {
