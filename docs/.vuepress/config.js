@@ -145,6 +145,7 @@ export default defineUserConfig({
           "column_layout",
           "flex",
           "grid",
+          "css3_features",
         ],
       },
     ],
