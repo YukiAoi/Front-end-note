@@ -143,6 +143,8 @@ export default defineUserConfig({
           "bfc",
           "center",
           "column_layout",
+          "flex",
+          "grid",
         ],
       },
     ],
