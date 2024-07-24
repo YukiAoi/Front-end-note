@@ -142,6 +142,7 @@ export default defineUserConfig({
           "hide_attributes",
           "bfc",
           "center",
+          "column_layout",
         ],
       },
     ],
