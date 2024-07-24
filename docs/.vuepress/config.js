@@ -140,6 +140,7 @@ export default defineUserConfig({
           "em_px_rem_vh_vw",
           "dp_px_dpr_ppi",
           "hide_attributes",
+          "bfc",
         ],
       },
     ],
