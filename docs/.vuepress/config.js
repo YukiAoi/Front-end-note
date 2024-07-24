@@ -134,7 +134,7 @@ export default defineUserConfig({
         text: "Css",
         prefix: "/css/",
         link: "/css/box",
-        children: ["box", "selector"],
+        children: ["box", "selector", "em_px_rem_vh_vw", "dp_px_dpr_ppi"],
       },
     ],
     editLink: false,
