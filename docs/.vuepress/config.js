@@ -149,6 +149,7 @@ export default defineUserConfig({
           "animation",
           "layout_painting",
           "responsive_layout",
+          "css_performance",
         ],
       },
     ],
