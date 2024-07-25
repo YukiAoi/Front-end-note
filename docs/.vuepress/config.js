@@ -148,6 +148,7 @@ export default defineUserConfig({
           "css3_features",
           "animation",
           "layout_painting",
+          "responsive_layout",
         ],
       },
     ],
