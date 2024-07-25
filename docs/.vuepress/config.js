@@ -146,6 +146,7 @@ export default defineUserConfig({
           "flex",
           "grid",
           "css3_features",
+          "animation",
         ],
       },
     ],
