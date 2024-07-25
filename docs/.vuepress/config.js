@@ -147,6 +147,7 @@ export default defineUserConfig({
           "grid",
           "css3_features",
           "animation",
+          "layout_painting",
         ],
       },
     ],
