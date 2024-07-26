@@ -153,6 +153,7 @@ export default defineUserConfig({
           "single_multi_line",
           "visual_scrolling",
           "triangle",
+          "less_12px",
         ],
       },
     ],
