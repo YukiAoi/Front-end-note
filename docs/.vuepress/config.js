@@ -154,6 +154,7 @@ export default defineUserConfig({
           "visual_scrolling",
           "triangle",
           "less_12px",
+          "sass_less_stylus",
         ],
       },
     ],
