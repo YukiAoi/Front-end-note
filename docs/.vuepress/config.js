@@ -150,6 +150,7 @@ export default defineUserConfig({
           "layout_painting",
           "responsive_layout",
           "css_performance",
+          "single_multi_line",
         ],
       },
     ],
