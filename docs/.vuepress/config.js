@@ -151,6 +151,7 @@ export default defineUserConfig({
           "responsive_layout",
           "css_performance",
           "single_multi_line",
+          "visual_scrolling",
         ],
       },
     ],
