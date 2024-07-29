@@ -157,6 +157,12 @@ export default defineUserConfig({
           "sass_less_stylus",
         ],
       },
+      {
+        text: "Html",
+        prefix: "/html/",
+        link: "/html/http_https",
+        children: ["http_https", "https"],
+      },
     ],
     editLink: false,
     locales: {
