@@ -161,7 +161,7 @@ export default defineUserConfig({
         text: "Html",
         prefix: "/html/",
         link: "/html/http_https",
-        children: ["http_https", "https", "udp_tcp", "osi"],
+        children: ["http_https", "https", "udp_tcp", "osi", "tcp_ip"],
       },
     ],
     editLink: false,
