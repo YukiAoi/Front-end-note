@@ -169,6 +169,8 @@ export default defineUserConfig({
           "tcp_ip",
           "dns",
           "cdn",
+          "1.0_1.1_2.0",
+          "status",
         ],
       },
     ],
