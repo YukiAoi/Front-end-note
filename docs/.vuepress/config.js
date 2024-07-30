@@ -173,6 +173,7 @@ export default defineUserConfig({
           "status",
           "get_post",
           "headers",
+          "after_url",
         ],
       },
     ],
