@@ -174,6 +174,7 @@ export default defineUserConfig({
           "get_post",
           "headers",
           "after_url",
+          "handshakes_waves",
         ],
       },
     ],
