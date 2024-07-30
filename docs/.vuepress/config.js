@@ -171,6 +171,7 @@ export default defineUserConfig({
           "cdn",
           "1.0_1.1_2.0",
           "status",
+          "get_post",
         ],
       },
     ],
