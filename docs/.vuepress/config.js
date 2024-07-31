@@ -160,8 +160,9 @@ export default defineUserConfig({
       {
         text: "Html",
         prefix: "/html/",
-        link: "/html/http_https",
+        link: "/html/html5",
         children: [
+          "html5",
           "http_https",
           "https",
           "udp_tcp",
