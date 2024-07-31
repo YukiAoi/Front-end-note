@@ -22,7 +22,7 @@ export default defineUserConfig({
     // sidebar,
     sidebar: [
       {
-        text: "Vue部分",
+        text: "Vue",
         prefix: "/vue/",
         link: "/vue/vue",
         children: [
@@ -179,6 +179,12 @@ export default defineUserConfig({
           "websocket",
           "cache",
         ],
+      },
+      {
+        text: "TypeScript",
+        prefix: "/typescript/",
+        link: "/typescript/typescript",
+        children: ["typescript"],
       },
     ],
     editLink: false,
