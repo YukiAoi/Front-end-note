@@ -176,6 +176,7 @@ export default defineUserConfig({
           "after_url",
           "handshakes_waves",
           "websocket",
+          "cache",
         ],
       },
     ],
