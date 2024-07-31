@@ -34,7 +34,7 @@
 - 利于开发和维护，方便其他设备解析（如屏幕阅读器）根据语义渲染网页
 - 有利于搜索引擎优化（SEO），搜索引擎爬虫会根据不同的标签来赋予不同的权重
 
-## ` <script>``<script async>``<script defer> `的区别
+## `<script><script async><script defer>`的区别
 
 - async 和 defer 都不会阻塞页面渲染
 - async 的加载顺序是先加载完成的先执行，一般用于独立脚本
