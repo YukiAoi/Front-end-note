@@ -184,7 +184,7 @@ export default defineUserConfig({
         text: "TypeScript",
         prefix: "/typescript/",
         link: "/typescript/typescript",
-        children: ["typescript"],
+        children: ["typescript", "data_type"],
       },
     ],
     editLink: false,
