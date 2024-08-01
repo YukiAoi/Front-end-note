@@ -197,6 +197,12 @@ export default defineUserConfig({
           "vue",
         ],
       },
+      {
+        text: "Webpack",
+        prefix: "/webpack/",
+        link: "/webpack/webpack",
+        children: ["webpack"],
+      },
     ],
     editLink: false,
     locales: {
