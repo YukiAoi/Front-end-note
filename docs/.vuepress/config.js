@@ -194,6 +194,7 @@ export default defineUserConfig({
           "high_type",
           "decorator",
           "namespace_module",
+          "vue",
         ],
       },
     ],
