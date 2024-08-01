@@ -191,6 +191,7 @@ export default defineUserConfig({
           "class",
           "function",
           "generic",
+          "high_type",
         ],
       },
     ],
