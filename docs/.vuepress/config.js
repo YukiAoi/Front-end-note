@@ -192,6 +192,7 @@ export default defineUserConfig({
           "function",
           "generic",
           "high_type",
+          "decorator",
         ],
       },
     ],
