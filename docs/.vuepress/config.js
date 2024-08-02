@@ -207,6 +207,7 @@ export default defineUserConfig({
           "loader",
           "plugin",
           "loader_plugin",
+          "hmr",
         ],
       },
     ],
