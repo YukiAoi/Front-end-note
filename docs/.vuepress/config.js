@@ -208,6 +208,7 @@ export default defineUserConfig({
           "plugin",
           "loader_plugin",
           "hmr",
+          "proxy",
         ],
       },
     ],
