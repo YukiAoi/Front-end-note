@@ -201,7 +201,7 @@ export default defineUserConfig({
         text: "Webpack",
         prefix: "/webpack/",
         link: "/webpack/webpack",
-        children: ["webpack", "build_process"],
+        children: ["webpack", "build_process", "loader"],
       },
     ],
     editLink: false,
