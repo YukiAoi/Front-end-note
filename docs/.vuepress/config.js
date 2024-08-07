@@ -87,6 +87,7 @@ export default defineUserConfig({
           "proxy",
           "module",
           "decorator",
+          "plus",
         ],
       },
       {
