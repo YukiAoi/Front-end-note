@@ -210,6 +210,7 @@ export default defineUserConfig({
           "hmr",
           "proxy",
           "performance",
+          "improve_build",
         ],
       },
     ],
