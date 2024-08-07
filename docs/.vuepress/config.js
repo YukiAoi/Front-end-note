@@ -211,6 +211,7 @@ export default defineUserConfig({
           "proxy",
           "performance",
           "improve_build",
+          "similar_tools",
         ],
       },
     ],
