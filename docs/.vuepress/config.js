@@ -209,6 +209,7 @@ export default defineUserConfig({
           "loader_plugin",
           "hmr",
           "proxy",
+          "performance",
         ],
       },
     ],
