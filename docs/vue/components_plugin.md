@@ -36,9 +36,9 @@
 ```vue
 <template></template>
 <script>
-export default{
-    ...
-}
+export default {
+  // ...
+};
 </script>
 <style></style>
 ```
@@ -47,13 +47,17 @@ export default{
 
 ```vue
 <template id="testComponent">
-  // 组件显示的内容
+  <!-- 组件显示的内容 -->
   <div>component!</div>
 </template>
 
-Vue.component('componentA',{ template: '#testComponent' template: `
-<div>component</div>
-` // 组件内容少可以通过这种形式 })
+<script>
+Vue.component("componentA", {
+  template: "#testComponent",
+  // 组件内容少可以通过这种形式
+  // template: `<div>component</div>`,
+});
+</script>
 ```
 
 #### 插件
@@ -65,29 +69,29 @@ MyPlugin.install = function (Vue, options) {
   // 1. 添加全局方法或 property
   Vue.myGlobalMethod = function () {
     // 逻辑...
-  }
+  };
 
   // 2. 添加全局资源
-  Vue.directive('my-directive', {
-    bind (el, binding, vnode, oldVnode) {
+  Vue.directive("my-directive", {
+    bind(el, binding, vnode, oldVnode) {
       // 逻辑...
-    }
-    ...
-  })
+    },
+    // ...
+  });
 
   // 3. 注入组件选项
   Vue.mixin({
     created: function () {
       // 逻辑...
-    }
-    ...
-  })
+    },
+    // ...
+  });
 
   // 4. 添加实例方法
   Vue.prototype.$myMethod = function (methodOptions) {
     // 逻辑...
-  }
-}
+  };
+};
 ```
 
 ### 注册形式
@@ -100,7 +104,7 @@ MyPlugin.install = function (Vue, options) {
 
 ```js
 Vue.component("my-component-name", {
-  /* ... */
+  // ...
 });
 ```
 
