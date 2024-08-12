@@ -161,8 +161,8 @@ console.log(stringValue.indexOf("o")); // 4
 
 ```js
 let message = "foobarbaz";
-console.log(message.startsWith("foo")); // true
-console.log(message.startsWith("bar")); // false
+console.log(message.startWith("foo")); // true
+console.log(message.startWith("bar")); // false
 console.log(message.includes("bar")); // true
 console.log(message.includes("qux")); // false
 ```
