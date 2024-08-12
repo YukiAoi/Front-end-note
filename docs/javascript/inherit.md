@@ -67,7 +67,7 @@ console.log(child.getName()); // 会报错
 
 ### 组合继承
 
-将原型链合构造函数结合起来
+将原型链和构造函数结合起来
 
 ```js
 function Parent3() {
