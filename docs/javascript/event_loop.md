@@ -15,7 +15,7 @@
 常见的微任务有：
 
 - Promise.then
-- MutaionObserver
+- MutationObserver
 - Object.observe（已废弃；Proxy 对象替代）
 - process.nextTick（Node.js）
 
