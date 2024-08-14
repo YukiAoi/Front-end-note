@@ -59,7 +59,7 @@
 ### 颜色
 
 - rgba：rgb 为颜色值，a 为透明度
-- hala：h 为色相，s 为饱和度，l 为亮度，a 为透明度
+- hsla：h 为色相，s 为饱和度，l 为亮度，a 为透明度
 
 ## transition 过渡
 
