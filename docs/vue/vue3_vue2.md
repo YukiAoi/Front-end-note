@@ -144,7 +144,7 @@ export default {
 
 - 组件上 v-model 用法已更改
 - `<template v-for>`和 非 v-for 节点上 key 用法已更改
-- 在同一元素上使用的 v-if 和 v-for 优先级已更改
+- v-if 优先级高于 v-for
 - v-bind="object" 现在排序敏感
 - v-for 中的 ref 不再注册 ref 数组
 
